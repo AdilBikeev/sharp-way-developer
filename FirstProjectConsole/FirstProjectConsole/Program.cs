@@ -6,9 +6,10 @@ namespace FirstProjectConsole
     {
         static void Main(string[] args)
         {
-            /*
+            Console.Write("Введите 1-ое число: ");
             if (int.TryParse(Console.ReadLine(), out int firstNum))
             {
+                Console.Write("Введите 2-ое число: ");
                 if (int.TryParse(Console.ReadLine(), out int secondNum))
                 {   
                     Console.WriteLine($"Ваши числа: {firstNum} и {secondNum}");
@@ -22,27 +23,26 @@ namespace FirstProjectConsole
             {
                 Console.WriteLine("Вы неверно ввели 1-ое число");
             }
-            */
 
-            if (int.TryParse(Console.ReadLine(), out int num))
-            {
-                if (num > 0)
-                {
-                  Console.WriteLine("Введенное число - положительное");
-                }
-                else if (num == 0)
-                {
-                    Console.WriteLine("Введенное число == 0");
-                }
-                else
-                {
-                    Console.WriteLine("Введенное число - отрицательное");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Вы ввели неверное число");
-            }
+            //if (int.TryParse(Console.ReadLine(), out int num))
+            //{
+            //    if (num > 0)
+            //    {
+            //      Console.WriteLine("Введенное число - положительное");
+            //    }
+            //    else if (num == 0)
+            //    {
+            //        Console.WriteLine("Введенное число == 0");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Введенное число - отрицательное");
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Вы ввели неверное число");
+            //}
         }
     }
 }

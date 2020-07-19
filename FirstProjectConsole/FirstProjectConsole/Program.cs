@@ -6,18 +6,43 @@ namespace FirstProjectConsole
     {
         static void Main(string[] args)
         {
-            Console.Write("Пожалуйста введите число: ");
-            int first;
-            int.TryParse(Console.ReadLine(), out first);
-            Console.WriteLine("Вы ввели число: " + first);
+            /*
+            if (int.TryParse(Console.ReadLine(), out int firstNum))
+            {
+                if (int.TryParse(Console.ReadLine(), out int secondNum))
+                {   
+                    Console.WriteLine($"Ваши числа: {firstNum} и {secondNum}");
+                }
+                else
+                {
+                    Console.WriteLine("Вы неверно ввели 2-ое число");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Вы неверно ввели 1-ое число");
+            }
+            */
 
-            Console.Write("Введите символ: ");
-            char symbol = Console.ReadKey().KeyChar;
-            Console.WriteLine("\n" + symbol);
-
-            Console.Write("Введите строку: ");
-            string messsage = Console.ReadLine();
-            Console.WriteLine($"Вы ввели строку: {messsage}");
+            if (int.TryParse(Console.ReadLine(), out int num))
+            {
+                if (num > 0)
+                {
+                  Console.WriteLine("Введенное число - положительное");
+                }
+                else if (num == 0)
+                {
+                    Console.WriteLine("Введенное число == 0");
+                }
+                else
+                {
+                    Console.WriteLine("Введенное число - отрицательное");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Вы ввели неверное число");
+            }
         }
     }
 }
